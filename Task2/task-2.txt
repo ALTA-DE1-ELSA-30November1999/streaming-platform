@@ -1,0 +1,7 @@
+CREATE TABLE cdc_table (id SERIAL PRIMARY KEY, name VARCHAR(100), age INT, gender VARCHAR(100), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+INSERT INTO cdc_table (name, age, gender) VALUES ('Elsafir', 24, 'Perempuan');
+INSERT INTO cdc_table (name, age, gender) VALUES ('Brenda', 16, 'Perempuan');
+INSERT INTO cdc_table (name, age, gender) VALUES ('Farchan', 24, 'Laki-Laki');
+
+UPDATE cdc_table SET name='Achmad' WHERE id=2;
